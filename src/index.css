@@ -1,13 +1,128 @@
+/* Global */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Maven Pro", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1 {
+  font-family: "Staatliches";
+  font-size: 86px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 96px;
+  margin: 0px 20px;
+}
+
+h2,
+h3 {
+  font-family: "Staatliches";
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: bold;
+  color: #fde3a4;
+  margin: 0px;
+}
+h4 {
+  margin: 0 12px;
+  margin: 0px;
+}
+p {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+}
+u {
+  text-decoration: underline;
+  text-decoration-color: #f4c6db;
+}
+mark {
+  background-color: #fde3a4;
+}
+.header {
+  width: 100%;
+  height: 48px;
+  position: absolute;
+}
+.sideNav {
+  z-index: 5;
+  position: absolute;
+  height: 100%;
+}
+.avatar img {
+  display: block;
+  opacity: 1;
+  border-radius: 5%;
+}
+img:hover {
+}
+.char1 {
+  background: url(assets/images/data.svg) no-repeat 0 0;
+  background-size: 100%;
+  width: 363px;
+  height: 344px;
+  position: absolute;
+  top: 14%;
+  right: 12.5%;
+}
+.char2 {
+  background: url(assets/images/love.svg) no-repeat 0 0;
+  background-size: 100%;
+  width: 109px;
+  height: 271px;
+  position: absolute;
+  top: 376px;
+  right: 440px;
+}
+.char3 {
+  background: url(assets/images/software.svg) no-repeat 0 0;
+  background-size: 100%;
+  width: 280px;
+  height: 260px;
+  position: absolute;
+  bottom: 156px;
+  right: 95px;
+}
+.services {
+  text-align: center;
+}
+.services-h1 h1 {
+  font-family: "Staatliches";
+  font-size: 56px;
+  margin: 36px 20px;
+  line-height: 1.1;
+}
+.design_icon {
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 24px;
+  margin-top: 12px;
+  background: url(assets/images/responsive.svg) no-repeat 0 0;
+  background-size: 100%;
+  width: 80px;
+  height: 80px;
+}
+.blueprint_icon {
+  display: block;
+  margin: auto;
+  margin-bottom: 24px;
+  margin-top: 12px;
+  background: url(assets/images/graphic-design.svg) no-repeat 0 0;
+  background-size: 100%;
+  width: 80px;
+  height: 80px;
+}
+.bar_icon {
+  display: block;
+  background: url(assets/images/bar-chart.svg) no-repeat 0 0;
+  background-size: 100%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-bottom: 24px;
+  margin-top: 12px;
 }

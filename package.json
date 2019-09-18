@@ -3,9 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "grommet": "^2.7.4",
+    "grommet-icons": "^4.2.0",
+    "particles.js": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-particles-js": "^2.7.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-sidebar": "^3.0.2",
+    "react-spinners": "^0.6.1",
+    "react-typist": "^2.0.5",
+    "react-use": "^10.1.2",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
