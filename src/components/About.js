@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Box, Heading, Tab, Tabs, Text, Button, Anchor } from "grommet";
+import { Box, Text, Button } from "grommet";
 import { Article } from "grommet-icons";
 import { Next } from "grommet-icons";
-import Typist from "react-typist";
 import Author from "./Author";
 import avatar from "../assets/images/user.jpg";
 import TypistAnim from "../utils/typist_animation.js";

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, withRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Grommet, Box, Text, Heading, Button } from "grommet";
 import Particles from "react-particles-js";
 
@@ -122,33 +123,49 @@ class App extends Component {
           }}
         >
           <Box fill={true}>
-            <BrowserRouter>
-              <SideNav />
-              <Box
-                className="outer-box"
-                direction="row"
-                background="#FFFFFF"
-                fill={true}
-                pad="52px 52px 0px 52px"
-              >
-                <Box
-                  className="inner-box"
-                  fill={true}
-                  animation={{
-                    type: "fadeIn",
-                    duration: 1500,
-                    size: "large"
+            <SideNav />
+            <Router>
+              <Route
+                render={({ location }) => {
+                  return (
+                    <TransitionGroup component={null}>
+                        <CSSTransition
+                        timeout={300}
+                        className='page'
+                        key={location.key}
+                      >
+                          <Box
+                          className="outer-box"
+                          direction="row"
+                          background="#FFFFFF"
+                          fill={true}
+                          pad="52px 52px 0px 52px"
+                        >
+                            <Box
+                              className="inner-box"
+                              fill={true}
+                              animation={{
+                                type: "fadeIn"
+                              }}
+
+                            >
+                              <Switch location={location}>
+                                <Route exact path="/" component={Blog} />
+                                <Route path="/about" component={About} />
+                                <Route path="/contact" component={Contact} />
+                                <Route path="/works" component={Works} />
+                                <Route path="/services" component={Services} />
+                                <Route path="/home" component={Home} />
+                              </Switch>
+                            </Box>
+                          </Box>
+                        </ CSSTransition>
+                      </TransitionGroup>
+                    );
                   }}
-                >
-                  <Route exact path="/" component={Blog} />
-                  <Route path="/about" component={About} />
-                  <Route path="/contact" component={Contact} />
-                  <Route path="/works" component={Works} />
-                  <Route path="/services" component={Services} />
-                  <Route path="/home" component={Home} />
-                </Box>
-              </Box>
-            </BrowserRouter>
+              />
+             
+            </Router>
           </Box>
         </Grommet>
       </div>
