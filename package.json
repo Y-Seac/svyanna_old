@@ -7,7 +7,7 @@
     "bootstrap": "4.4.1",
     "grommet": "2.7.11",
     "grommet-icons": "4.3.0",
-    "node-sass": "4.13.0",
+    "node-sass": "4.14.1",
     "normalize.css": "8.0.1",
     "particles.js": "^2.0.0",
     "react": "16.11.0",
