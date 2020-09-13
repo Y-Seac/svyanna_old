@@ -72,8 +72,8 @@ class Tile extends React.Component {
         top: "20%",
         left: "20%",
         margin: "0",
-        marginTop: "-31vw",
-        marginLeft: "-31vw",
+        marginTop: "-11vw",
+        marginLeft: "-11vw",
         border: "3px solid #000000",
         borderColor: this.props.data.color,
         boxShadow: "-2px 2px 10px 0px rgba(#444, 0.4)",
@@ -81,8 +81,8 @@ class Tile extends React.Component {
       };
     } else {
       tileStyle = {
-        width: "18vw",
-        height: "18vw"
+        width: "28vw",
+        height: "28vh"
       };
     }
 

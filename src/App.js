@@ -34,37 +34,41 @@ class App extends Component {
   render() {
     return (
       <Container className="main_container px-0 mx-0">
-          <Router>
-            <ScrollToTop>
-              <Route
-                render={({ location }) => {
-                  return (
-                    <Container className="Responsive-Wrapper px-0 mx-0" fluid={true}>
-                      {routes.map(({ path, Component }) => (
-                        <Route key={path} exact path={path}>
-                          {({ match }) => (
-                            <CSSTransition
-                              in={match != null}
-                              timeout={300}
-                              classNames="page"
-                              unmountOnExit>
-                              <Container className="page px-0" fluid={true}>
-                                <ParticlesContainer />  
-                                <SideNav />  
-                                <Component/>
-                                <MenuBar />
-                                <Footer />
-                              </Container>
-                            </CSSTransition>
-                          )}
-                        </Route>
-                      ))}
-                    </Container>
-                  );
-                }}
-              />
-            </ScrollToTop>
-          </Router>
+        <Router>
+          <ScrollToTop>
+            <Route
+              render={({ location }) => {
+                return (
+                  <Container
+                    className="Responsive-Wrapper px-0 mx-0"
+                    fluid={true}>
+                    {routes.map(({ path, Component }) => (
+                      <Route key={path} exact path={path}>
+                        {({ match }) => (
+                          <CSSTransition
+                            in={match != null}
+                            timeout={300}
+                            classNames="page"
+                            unmountOnExit>
+                            <Container className="page px-0" fluid={true}>
+                              <ParticlesContainer />
+                              <MenuBar />
+                              <SideNav />
+                              <div className="page-wrapper my-5">
+                                <Component />
+                              </div>
+                              <Footer />
+                            </Container>
+                          </CSSTransition>
+                        )}
+                      </Route>
+                    ))}
+                  </Container>
+                );
+              }}
+            />
+          </ScrollToTop>
+        </Router>
       </Container>
     );
   }
