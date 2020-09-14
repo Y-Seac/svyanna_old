@@ -5,6 +5,7 @@
   "dependencies": {
     "@svgr/webpack": "4.3.3",
     "bootstrap": "4.4.1",
+    "express": "^4.17.1",
     "grommet": "2.7.11",
     "grommet-icons": "4.3.0",
     "node-sass": "4.13.0",
@@ -43,5 +44,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Y-Seac/svyanna.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Y-Seac/svyanna/issues"
+  },
+  "homepage": "https://github.com/Y-Seac/svyanna#readme"
 }
