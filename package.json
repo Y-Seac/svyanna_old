@@ -1,6 +1,6 @@
 {
-  "name": "portfolio-syanna",
-  "version": "0.1.0",
+  "name": "svyanna",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@svgr/webpack": "4.3.3",
