@@ -20,7 +20,7 @@
     "react-sticky-el": "1.1.0",
     "react-transition-group": "4.3.0",
     "react-typist": "^2.0.5",
-    "react-use": "^10.1.2",
+    "react-use": "^10.8.0",
     "reactstrap": "8.1.1",
     "styled-components": "4.4.0"
   },
